@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    outline: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root{
+    --texto: #28282d;
+}
+
+body{
+    font-family: "Poppins";
+    padding: 20px;
+    background: #ebe7e7;
+
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.nav{
+    background: #000;
+    color: #ffffff9a;
+    width: 90px;
+    height: 100%;
+    box-shadow: 0 0 5px 2px #ccc;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-icone{
+    font-size: 30px;
+    display: inline-block;
+    transition: .3s ease-out;
+    margin: 5px 0;
+}
+.menu-icone:hover{
+    transform: scale(1.1);
+    color: #e6ff50;
+}
+
+.container{
+    padding: 15px;
+    width: 100%;
+}
+.header{
+    background: #ffffff59;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.left, .right{
+    display: flex;
+    gap: 1rem;
+}
+.left div{
+    width: 60%;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.left div span{
+    font-size: 12px;
+}
+.right{
+ border: none;
+}
+.header-icone{
+    font-size: 30px;
+    display: inline-block;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+.header-icone:hover{
+    transform: scale(1.09);
+}
+
+
+.section{
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/*.section div:nth-child(2){
+    margin: 5px 0;
+    background: #e6ff50;
+    padding: 5px 10px;
+    border-radius: 8px;
+}*/
+
+
+.container-cards{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.cards{
+    width: 231px;
+    height: 80px;
+    background: #ccc;
+    border-radius: 16px;
+    padding: 10px;
+    transition: .3s ease-out;
+}
+.cards:hover{
+    transform: scale(1.02);
+}
+.cards a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cards a p{
+    display: flex;
+    flex-direction: column;
+}
+.cards a p span:nth-child(1){
+    font-weight: bold;
+    font-size: 20px;
+}
+.cards-icone{
+    font-size: 30px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 3px solid #e6ff50;
+}
+
+
+.graficos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.grafico1{
+    background: #000000ad;
+    width: 70%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.grafico2{
+    background: #00000091;
+    width: 50%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+
+
+
+@media (max-width:800px){
+    .main{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: relative;
+    }
+    .nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .cards{
+        width: 100%;
+        height: 100px;
+        background: #ccc;
+        border-radius: 16px;
+        padding: 10px;
+        transition: .3s ease-out;
+    }
+}

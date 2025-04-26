@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+:root{
+    --back: #ebebeb;
+    --backx: #ebebeb;
+    --text: #0000008e;
+
+    --primary: #232537;
+    --shadow: #1a1922;
+    --shadowx: #e8ebee;
+    --texto: #eeeeedd3;
+}
+.messagem{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: red;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top right, #ebebeb, #ebe7e7, #ebebeb);
+    font-family: "Poppins";
+}
+.container{
+    background: var(--shadowx);
+    padding: 6px;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 0 20px 0 #ccc;
+}
+.form{
+    position: absolute;
+    margin-top: 80px;
+    transition: .5s;
+    width: 300px;
+    height: 400px;
+}
+.buttonsform{
+    width: 65%;
+    margin-top: 40px;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0 0 7px 0 #ccc;
+}
+.buttonsform button{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    position: relative;
+    padding: 10px;
+    color: #ccc;
+    padding-left: 40px;
+}
+.btncolor{
+    position: absolute;
+    width: 108px;
+    height: 100%;
+    background: var(--primary);
+    border-radius: 30px;
+    transition: .3s;
+}
+.box-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.box-input input{
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s ease-out;
+    color: #1a1922;
+}
+.box-input select{
+    margin: 5px;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 8px;
+    transition: .3s ease-out;
+    color: #1a1922;
+}
+.box-input input:hover{
+    transform: scale(1.04);
+}
+.box-input select:hover{
+    transform: scale(1.04);
+}
+.box-input button[type="submit"]{
+    margin: 5px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: var(--texto);
+    font-weight: bold;
+    transition: .3s ease-out;
+    cursor: pointer;
+}
+.box-input button[type="submit"]:hover{
+    transform: scale(1.04);
+}
+.logo{
+    margin: 20px auto;
+    text-align: center;
+}
+.logo h1{
+    font-weight: bold;
+    font-size: 25px;
+    font-family: "Oswald";
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    color: var(--primary);
+}
+.logo p{
+    font-size: 13px;
+}
+.divcheck{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+.divcheck span{
+    font-size: 12px;
+}
+
+
+#signin{
+    left: 25px;
+}
+#signup {
+    position: absolute;
+    left: 450px;
+}
